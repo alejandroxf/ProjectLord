@@ -19,6 +19,7 @@
 		159466AB17922068002D3671 /* xurfaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159466AA17922068002D3671 /* xurfaceViewController.m */; };
 		159466AE17922068002D3671 /* xurfaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 159466AC17922068002D3671 /* xurfaceViewController.xib */; };
 		C168630A1794FF4600F9EE32 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C16863091794FF4600F9EE32 /* User.m */; };
+		C168630C179500AC00F9EE32 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168630B179500AC00F9EE32 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		159466AD17922068002D3671 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/xurfaceViewController.xib; sourceTree = "<group>"; };
 		C16863081794FF4600F9EE32 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		C16863091794FF4600F9EE32 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		C168630B179500AC00F9EE32 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C168630C179500AC00F9EE32 /* CoreData.framework in Frameworks */,
 				1594669217922068002D3671 /* UIKit.framework in Frameworks */,
 				1594669417922068002D3671 /* Foundation.framework in Frameworks */,
 				1594669617922068002D3671 /* CoreGraphics.framework in Frameworks */,
@@ -76,6 +79,7 @@
 		1594669017922068002D3671 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C168630B179500AC00F9EE32 /* CoreData.framework */,
 				1594669117922068002D3671 /* UIKit.framework */,
 				1594669317922068002D3671 /* Foundation.framework */,
 				1594669517922068002D3671 /* CoreGraphics.framework */,
