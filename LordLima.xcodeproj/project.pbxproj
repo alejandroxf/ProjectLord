@@ -26,8 +26,11 @@
 		C14CDA85179637F100DA0FB5 /* PlaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C14CDA83179637F100DA0FB5 /* PlaceViewController.xib */; };
 		C14CDA891796383400DA0FB5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CDA871796383400DA0FB5 /* MapViewController.m */; };
 		C14CDA8A1796383400DA0FB5 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C14CDA881796383400DA0FB5 /* MapViewController.xib */; };
+		C14CDA8F179647B000DA0FB5 /* shovel.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CDA8D179647B000DA0FB5 /* shovel.png */; };
+		C14CDA90179647B000DA0FB5 /* shovel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CDA8E179647B000DA0FB5 /* shovel@2x.png */; };
 		C168630A1794FF4600F9EE32 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C16863091794FF4600F9EE32 /* User.m */; };
 		C168630C179500AC00F9EE32 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168630B179500AC00F9EE32 /* CoreData.framework */; };
+		C1B1128D1796515D00485D41 /* ALScrollViewPaging.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B1128C1796515D00485D41 /* ALScrollViewPaging.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,9 +62,13 @@
 		C14CDA861796383400DA0FB5 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		C14CDA871796383400DA0FB5 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		C14CDA881796383400DA0FB5 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		C14CDA8D179647B000DA0FB5 /* shovel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shovel.png; sourceTree = "<group>"; };
+		C14CDA8E179647B000DA0FB5 /* shovel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shovel@2x.png"; sourceTree = "<group>"; };
 		C16863081794FF4600F9EE32 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		C16863091794FF4600F9EE32 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		C168630B179500AC00F9EE32 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C1B1128B1796515D00485D41 /* ALScrollViewPaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALScrollViewPaging.h; sourceTree = "<group>"; };
+		C1B1128C1796515D00485D41 /* ALScrollViewPaging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALScrollViewPaging.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +156,8 @@
 		C14CDA8C179646CF00DA0FB5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C14CDA8D179647B000DA0FB5 /* shovel.png */,
+				C14CDA8E179647B000DA0FB5 /* shovel@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -165,6 +174,7 @@
 		C16863061794FEE400F9EE32 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				C1B1128A1796515D00485D41 /* ALScrollViewPaging */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -186,6 +196,15 @@
 				C14CDA881796383400DA0FB5 /* MapViewController.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C1B1128A1796515D00485D41 /* ALScrollViewPaging */ = {
+			isa = PBXGroup;
+			children = (
+				C1B1128B1796515D00485D41 /* ALScrollViewPaging.h */,
+				C1B1128C1796515D00485D41 /* ALScrollViewPaging.m */,
+			);
+			path = ALScrollViewPaging;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +268,8 @@
 				C14CDA801796378D00DA0FB5 /* RouteViewController.xib in Resources */,
 				C14CDA85179637F100DA0FB5 /* PlaceViewController.xib in Resources */,
 				C14CDA8A1796383400DA0FB5 /* MapViewController.xib in Resources */,
+				C14CDA8F179647B000DA0FB5 /* shovel.png in Resources */,
+				C14CDA90179647B000DA0FB5 /* shovel@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +288,7 @@
 				C14CDA7F1796378D00DA0FB5 /* RouteViewController.m in Sources */,
 				C14CDA84179637F100DA0FB5 /* PlaceViewController.m in Sources */,
 				C14CDA891796383400DA0FB5 /* MapViewController.m in Sources */,
+				C1B1128D1796515D00485D41 /* ALScrollViewPaging.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

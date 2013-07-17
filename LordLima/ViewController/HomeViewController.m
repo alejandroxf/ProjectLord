@@ -7,7 +7,8 @@
 //
 
 #import "HomeViewController.h"
-#import "RouteViewController.h"
+#import "RouteViewController.h" 
+#import "ALScrollViewPaging.h"
 
 @interface HomeViewController ()
 
@@ -30,6 +31,7 @@
     // Do any additional setup after loading the view from its nib.
     
     [self createMenuBar];
+    [self createSlider];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,6 +45,25 @@
     
     [self.navigationController pushViewController:currentVC
                                          animated:YES];
+}
+
+-(void)createSlider{
+    ALScrollViewPaging *scrollingView = [[ALScrollViewPaging alloc] initWithFrame:CGRectMake(0, 0, 320, 180)];
+    
+    NSMutableArray *views = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < 5; i++) {
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"shovel"]];
+        [views addObject:imageView];
+    }
+    
+    //add pages to scrollview
+    [scrollingView addPages:views];
+    
+    //add scrollview to the views
+    [self.view addSubview:scrollingView];
+    
+    [scrollingView setHasPageControl:NO];
 }
 
 -(void)createMenuBar{
