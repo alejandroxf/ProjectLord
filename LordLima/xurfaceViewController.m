@@ -44,8 +44,8 @@
     UIImageView *imageView2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"001_Init_img2"]];
     UIImageView *imageView3 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"001_Init_img3"]];
     [views addObject:imageView1];
-    [views addObject:imageView2];
     [views addObject:imageView3];
+    [views addObject:imageView2];
     
     //add pages to scrollview
     [scrollingView addPages:views];
