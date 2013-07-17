@@ -40,8 +40,6 @@
     
     NSMutableArray *views = [[NSMutableArray alloc] init];
 
-    
-
     UIImageView *imageView1 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"001_Init_img1"]];
     UIImageView *imageView2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"001_Init_img2"]];
     UIImageView *imageView3 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"001_Init_img3"]];
