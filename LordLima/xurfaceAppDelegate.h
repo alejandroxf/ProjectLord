@@ -15,5 +15,7 @@
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) xurfaceViewController *viewController;
+@property (strong, nonatomic) UINavigationController *mainNavigationController;
+-(void) rootViewControllerByNavigationController;
 
 @end

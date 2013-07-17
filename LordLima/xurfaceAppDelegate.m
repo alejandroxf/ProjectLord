@@ -9,8 +9,10 @@
 #import "xurfaceAppDelegate.h"
 
 #import "xurfaceViewController.h"
+#import "HomeViewController.h"
 
 @implementation xurfaceAppDelegate
+@synthesize mainNavigationController = _mainNavigationController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -20,6 +22,14 @@
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void) rootViewControllerByNavigationController{
+    HomeViewController *currentVC = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+    self.mainNavigationController  = [[UINavigationController alloc] initWithRootViewController:currentVC];
+    self.window.rootViewController = self.mainNavigationController;
+    [self.window makeKeyAndVisible];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -47,6 +57,8 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    self.viewController = nil;
+    self.mainNavigationController = nil;
 }
 
 @end

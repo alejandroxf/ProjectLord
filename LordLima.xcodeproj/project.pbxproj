@@ -18,6 +18,14 @@
 		159466A817922068002D3671 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 159466A717922068002D3671 /* Default-568h@2x.png */; };
 		159466AB17922068002D3671 /* xurfaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159466AA17922068002D3671 /* xurfaceViewController.m */; };
 		159466AE17922068002D3671 /* xurfaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 159466AC17922068002D3671 /* xurfaceViewController.xib */; };
+		C14CDA7A17962EC300DA0FB5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CDA7817962EC300DA0FB5 /* HomeViewController.m */; };
+		C14CDA7B17962EC300DA0FB5 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C14CDA7917962EC300DA0FB5 /* HomeViewController.xib */; };
+		C14CDA7F1796378D00DA0FB5 /* RouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CDA7D1796378D00DA0FB5 /* RouteViewController.m */; };
+		C14CDA801796378D00DA0FB5 /* RouteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C14CDA7E1796378D00DA0FB5 /* RouteViewController.xib */; };
+		C14CDA84179637F100DA0FB5 /* PlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CDA82179637F100DA0FB5 /* PlaceViewController.m */; };
+		C14CDA85179637F100DA0FB5 /* PlaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C14CDA83179637F100DA0FB5 /* PlaceViewController.xib */; };
+		C14CDA891796383400DA0FB5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CDA871796383400DA0FB5 /* MapViewController.m */; };
+		C14CDA8A1796383400DA0FB5 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C14CDA881796383400DA0FB5 /* MapViewController.xib */; };
 		C168630A1794FF4600F9EE32 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C16863091794FF4600F9EE32 /* User.m */; };
 		C168630C179500AC00F9EE32 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168630B179500AC00F9EE32 /* CoreData.framework */; };
 /* End PBXBuildFile section */
@@ -39,6 +47,18 @@
 		159466A917922068002D3671 /* xurfaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xurfaceViewController.h; sourceTree = "<group>"; };
 		159466AA17922068002D3671 /* xurfaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xurfaceViewController.m; sourceTree = "<group>"; };
 		159466AD17922068002D3671 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/xurfaceViewController.xib; sourceTree = "<group>"; };
+		C14CDA7717962EC300DA0FB5 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C14CDA7817962EC300DA0FB5 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C14CDA7917962EC300DA0FB5 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C14CDA7C1796378D00DA0FB5 /* RouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteViewController.h; sourceTree = "<group>"; };
+		C14CDA7D1796378D00DA0FB5 /* RouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteViewController.m; sourceTree = "<group>"; };
+		C14CDA7E1796378D00DA0FB5 /* RouteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouteViewController.xib; sourceTree = "<group>"; };
+		C14CDA81179637F100DA0FB5 /* PlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceViewController.h; sourceTree = "<group>"; };
+		C14CDA82179637F100DA0FB5 /* PlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceViewController.m; sourceTree = "<group>"; };
+		C14CDA83179637F100DA0FB5 /* PlaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceViewController.xib; sourceTree = "<group>"; };
+		C14CDA861796383400DA0FB5 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		C14CDA871796383400DA0FB5 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		C14CDA881796383400DA0FB5 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		C16863081794FF4600F9EE32 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		C16863091794FF4600F9EE32 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		C168630B179500AC00F9EE32 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -90,6 +110,7 @@
 		1594669717922068002D3671 /* LordLima */ = {
 			isa = PBXGroup;
 			children = (
+				C14CDA8B179646CF00DA0FB5 /* Resource */,
 				C16863051794FEE400F9EE32 /* Entity */,
 				C16863061794FEE400F9EE32 /* Lib */,
 				C16863071794FEE400F9EE32 /* ViewController */,
@@ -117,6 +138,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C14CDA8B179646CF00DA0FB5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C14CDA8C179646CF00DA0FB5 /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C14CDA8C179646CF00DA0FB5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		C16863051794FEE400F9EE32 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +172,18 @@
 		C16863071794FEE400F9EE32 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C14CDA7717962EC300DA0FB5 /* HomeViewController.h */,
+				C14CDA7817962EC300DA0FB5 /* HomeViewController.m */,
+				C14CDA7917962EC300DA0FB5 /* HomeViewController.xib */,
+				C14CDA7C1796378D00DA0FB5 /* RouteViewController.h */,
+				C14CDA7D1796378D00DA0FB5 /* RouteViewController.m */,
+				C14CDA7E1796378D00DA0FB5 /* RouteViewController.xib */,
+				C14CDA81179637F100DA0FB5 /* PlaceViewController.h */,
+				C14CDA82179637F100DA0FB5 /* PlaceViewController.m */,
+				C14CDA83179637F100DA0FB5 /* PlaceViewController.xib */,
+				C14CDA861796383400DA0FB5 /* MapViewController.h */,
+				C14CDA871796383400DA0FB5 /* MapViewController.m */,
+				C14CDA881796383400DA0FB5 /* MapViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -197,6 +245,10 @@
 				159466A617922068002D3671 /* Default@2x.png in Resources */,
 				159466A817922068002D3671 /* Default-568h@2x.png in Resources */,
 				159466AE17922068002D3671 /* xurfaceViewController.xib in Resources */,
+				C14CDA7B17962EC300DA0FB5 /* HomeViewController.xib in Resources */,
+				C14CDA801796378D00DA0FB5 /* RouteViewController.xib in Resources */,
+				C14CDA85179637F100DA0FB5 /* PlaceViewController.xib in Resources */,
+				C14CDA8A1796383400DA0FB5 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +263,10 @@
 				159466A217922068002D3671 /* xurfaceAppDelegate.m in Sources */,
 				159466AB17922068002D3671 /* xurfaceViewController.m in Sources */,
 				C168630A1794FF4600F9EE32 /* User.m in Sources */,
+				C14CDA7A17962EC300DA0FB5 /* HomeViewController.m in Sources */,
+				C14CDA7F1796378D00DA0FB5 /* RouteViewController.m in Sources */,
+				C14CDA84179637F100DA0FB5 /* PlaceViewController.m in Sources */,
+				C14CDA891796383400DA0FB5 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

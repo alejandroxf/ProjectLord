@@ -7,6 +7,7 @@
 //
 
 #import "xurfaceViewController.h"
+#import "xurfaceAppDelegate.h"
 
 @interface xurfaceViewController ()
 
@@ -25,5 +26,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(IBAction)loadHomeViewController:(id)sender{
+    xurfaceAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    
+    [delegate rootViewControllerByNavigationController];
+}
 @end
