@@ -9,8 +9,12 @@
 #import "HomeViewController.h"
 #import "RouteViewController.h" 
 #import "ALScrollViewPaging.h"
+#import "HomeViewControllerCell.h"
 
-@interface HomeViewController ()
+
+
+@interface HomeViewController () 
+
 
 @end
 
@@ -32,6 +36,8 @@
     
     [self createMenuBar];
     [self createSlider];
+    
+    [self loadCollectionView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,6 +48,7 @@
 -(IBAction)showRoute:(id)sender{
     UIViewController *currentVC = [[RouteViewController alloc]  initWithNibName:@"RouteViewController"
                                                                          bundle:nil];
+     
     
     [self.navigationController pushViewController:currentVC
                                          animated:YES];
@@ -78,5 +85,15 @@
 -(void)changeTitle{
     [self setTitle:@"Cool!!!"];
 }
+
+#pragma UICollectionViewDelegate
+
+
+
+-(void) loadCollectionView{
+    /*[self.collectionRoutes registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"HomeViewControllerCell"];*/
+}
+
+
 
 @end

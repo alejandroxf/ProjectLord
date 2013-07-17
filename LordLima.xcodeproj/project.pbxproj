@@ -31,6 +31,7 @@
 		C168630A1794FF4600F9EE32 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C16863091794FF4600F9EE32 /* User.m */; };
 		C168630C179500AC00F9EE32 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168630B179500AC00F9EE32 /* CoreData.framework */; };
 		C1B1128D1796515D00485D41 /* ALScrollViewPaging.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B1128C1796515D00485D41 /* ALScrollViewPaging.m */; };
+		C1C1FE60179664D900A5FD32 /* HomeViewControllerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C1FE5F179664D900A5FD32 /* HomeViewControllerCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,8 @@
 		C168630B179500AC00F9EE32 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C1B1128B1796515D00485D41 /* ALScrollViewPaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALScrollViewPaging.h; sourceTree = "<group>"; };
 		C1B1128C1796515D00485D41 /* ALScrollViewPaging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALScrollViewPaging.m; sourceTree = "<group>"; };
+		C1C1FE5E179664D900A5FD32 /* HomeViewControllerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewControllerCell.h; sourceTree = "<group>"; };
+		C1C1FE5F179664D900A5FD32 /* HomeViewControllerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewControllerCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +197,8 @@
 				C14CDA861796383400DA0FB5 /* MapViewController.h */,
 				C14CDA871796383400DA0FB5 /* MapViewController.m */,
 				C14CDA881796383400DA0FB5 /* MapViewController.xib */,
+				C1C1FE5E179664D900A5FD32 /* HomeViewControllerCell.h */,
+				C1C1FE5F179664D900A5FD32 /* HomeViewControllerCell.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				C14CDA84179637F100DA0FB5 /* PlaceViewController.m in Sources */,
 				C14CDA891796383400DA0FB5 /* MapViewController.m in Sources */,
 				C1B1128D1796515D00485D41 /* ALScrollViewPaging.m in Sources */,
+				C1C1FE60179664D900A5FD32 /* HomeViewControllerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
