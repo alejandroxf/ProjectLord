@@ -10,6 +10,6 @@
 
 @interface HomeViewController : UIViewController
 
-
+@property(nonatomic, weak) IBOutlet UICollectionView *collectionRoutes;
 -(IBAction)showRoute:(id)sender;
 @end
