@@ -8,6 +8,7 @@
 
 #import "xurfaceViewController.h"
 #import "xurfaceAppDelegate.h"
+#import "ALScrollViewPaging.h"
 
 @interface xurfaceViewController ()
 
@@ -19,6 +20,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self createSlider];
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,4 +33,30 @@
     
     [delegate rootViewControllerByNavigationController];
 }
+
+-(void)createSlider{
+    
+    ALScrollViewPaging *scrollingView = [[ALScrollViewPaging alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    
+    NSMutableArray *views = [[NSMutableArray alloc] init];
+
+    
+
+    UIImageView *imageView1 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"001_Init_img1"]];
+    UIImageView *imageView2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"001_Init_img2"]];
+    UIImageView *imageView3 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"001_Init_img3"]];
+    [views addObject:imageView1];
+    [views addObject:imageView2];
+    [views addObject:imageView3];
+    
+    //add pages to scrollview
+    [scrollingView addPages:views];
+    
+    //add scrollview to the views
+    [self.view addSubview:scrollingView];
+    
+    [scrollingView setHasPageControl:YES];
+    
+}
+
 @end
