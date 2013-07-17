@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1552D2161796645400D79EDB /* 001_Init_img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1552D2101796645400D79EDB /* 001_Init_img1.png */; };
+		1552D2171796645400D79EDB /* 001_Init_img1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1552D2111796645400D79EDB /* 001_Init_img1@2x.png */; };
+		1552D2181796645400D79EDB /* 001_Init_img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1552D2121796645400D79EDB /* 001_Init_img2.png */; };
+		1552D2191796645400D79EDB /* 001_Init_img2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1552D2131796645400D79EDB /* 001_Init_img2@2x.png */; };
+		1552D21A1796645400D79EDB /* 001_Init_img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1552D2141796645400D79EDB /* 001_Init_img3.png */; };
+		1552D21B1796645400D79EDB /* 001_Init_img3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1552D2151796645400D79EDB /* 001_Init_img3@2x.png */; };
 		1594669217922068002D3671 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1594669117922068002D3671 /* UIKit.framework */; };
 		1594669417922068002D3671 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1594669317922068002D3671 /* Foundation.framework */; };
 		1594669617922068002D3671 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1594669517922068002D3671 /* CoreGraphics.framework */; };
@@ -34,6 +40,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1552D2101796645400D79EDB /* 001_Init_img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 001_Init_img1.png; sourceTree = "<group>"; };
+		1552D2111796645400D79EDB /* 001_Init_img1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "001_Init_img1@2x.png"; sourceTree = "<group>"; };
+		1552D2121796645400D79EDB /* 001_Init_img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 001_Init_img2.png; sourceTree = "<group>"; };
+		1552D2131796645400D79EDB /* 001_Init_img2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "001_Init_img2@2x.png"; sourceTree = "<group>"; };
+		1552D2141796645400D79EDB /* 001_Init_img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 001_Init_img3.png; sourceTree = "<group>"; };
+		1552D2151796645400D79EDB /* 001_Init_img3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "001_Init_img3@2x.png"; sourceTree = "<group>"; };
 		1594668E17922068002D3671 /* LordLima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LordLima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1594669117922068002D3671 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1594669317922068002D3671 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,6 +98,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1552D20F1796645400D79EDB /* Init */ = {
+			isa = PBXGroup;
+			children = (
+				1552D2101796645400D79EDB /* 001_Init_img1.png */,
+				1552D2111796645400D79EDB /* 001_Init_img1@2x.png */,
+				1552D2121796645400D79EDB /* 001_Init_img2.png */,
+				1552D2131796645400D79EDB /* 001_Init_img2@2x.png */,
+				1552D2141796645400D79EDB /* 001_Init_img3.png */,
+				1552D2151796645400D79EDB /* 001_Init_img3@2x.png */,
+			);
+			path = Init;
+			sourceTree = "<group>";
+		};
 		1594668517922068002D3671 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +181,7 @@
 		C14CDA8C179646CF00DA0FB5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1552D20F1796645400D79EDB /* Init */,
 				C14CDA8D179647B000DA0FB5 /* shovel.png */,
 				C14CDA8E179647B000DA0FB5 /* shovel@2x.png */,
 			);
@@ -270,6 +296,12 @@
 				C14CDA8A1796383400DA0FB5 /* MapViewController.xib in Resources */,
 				C14CDA8F179647B000DA0FB5 /* shovel.png in Resources */,
 				C14CDA90179647B000DA0FB5 /* shovel@2x.png in Resources */,
+				1552D2161796645400D79EDB /* 001_Init_img1.png in Resources */,
+				1552D2171796645400D79EDB /* 001_Init_img1@2x.png in Resources */,
+				1552D2181796645400D79EDB /* 001_Init_img2.png in Resources */,
+				1552D2191796645400D79EDB /* 001_Init_img2@2x.png in Resources */,
+				1552D21A1796645400D79EDB /* 001_Init_img3.png in Resources */,
+				1552D21B1796645400D79EDB /* 001_Init_img3@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
