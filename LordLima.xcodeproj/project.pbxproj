@@ -13,6 +13,12 @@
 		1552D2191796645400D79EDB /* 001_Init_img2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1552D2131796645400D79EDB /* 001_Init_img2@2x.png */; };
 		1552D21A1796645400D79EDB /* 001_Init_img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1552D2141796645400D79EDB /* 001_Init_img3.png */; };
 		1552D21B1796645400D79EDB /* 001_Init_img3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1552D2151796645400D79EDB /* 001_Init_img3@2x.png */; };
+		158E346B1797AF4200B31962 /* StartSesionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158E34691797AF4200B31962 /* StartSesionViewController.m */; };
+		158E346C1797AF4200B31962 /* StartSesionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 158E346A1797AF4200B31962 /* StartSesionViewController.xib */; };
+		158E34701797AF7800B31962 /* NewAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158E346E1797AF7800B31962 /* NewAccountViewController.m */; };
+		158E34711797AF7800B31962 /* NewAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 158E346F1797AF7800B31962 /* NewAccountViewController.xib */; };
+		158E34751797AFDC00B31962 /* PwdRecoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158E34731797AFDC00B31962 /* PwdRecoveryViewController.m */; };
+		158E34761797AFDC00B31962 /* PwdRecoveryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 158E34741797AFDC00B31962 /* PwdRecoveryViewController.xib */; };
 		1594669217922068002D3671 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1594669117922068002D3671 /* UIKit.framework */; };
 		1594669417922068002D3671 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1594669317922068002D3671 /* Foundation.framework */; };
 		1594669617922068002D3671 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1594669517922068002D3671 /* CoreGraphics.framework */; };
@@ -49,6 +55,15 @@
 		1552D2131796645400D79EDB /* 001_Init_img2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "001_Init_img2@2x.png"; sourceTree = "<group>"; };
 		1552D2141796645400D79EDB /* 001_Init_img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 001_Init_img3.png; sourceTree = "<group>"; };
 		1552D2151796645400D79EDB /* 001_Init_img3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "001_Init_img3@2x.png"; sourceTree = "<group>"; };
+		158E34681797AF4200B31962 /* StartSesionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartSesionViewController.h; sourceTree = "<group>"; };
+		158E34691797AF4200B31962 /* StartSesionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartSesionViewController.m; sourceTree = "<group>"; };
+		158E346A1797AF4200B31962 /* StartSesionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartSesionViewController.xib; sourceTree = "<group>"; };
+		158E346D1797AF7800B31962 /* NewAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewAccountViewController.h; sourceTree = "<group>"; };
+		158E346E1797AF7800B31962 /* NewAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewAccountViewController.m; sourceTree = "<group>"; };
+		158E346F1797AF7800B31962 /* NewAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewAccountViewController.xib; sourceTree = "<group>"; };
+		158E34721797AFDC00B31962 /* PwdRecoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PwdRecoveryViewController.h; sourceTree = "<group>"; };
+		158E34731797AFDC00B31962 /* PwdRecoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PwdRecoveryViewController.m; sourceTree = "<group>"; };
+		158E34741797AFDC00B31962 /* PwdRecoveryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PwdRecoveryViewController.xib; sourceTree = "<group>"; };
 		1594668E17922068002D3671 /* LordLima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LordLima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1594669117922068002D3671 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1594669317922068002D3671 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -232,6 +247,15 @@
 				C1C1FE5E179664D900A5FD32 /* HomeViewControllerCell.h */,
 				C1C1FE5F179664D900A5FD32 /* HomeViewControllerCell.m */,
 				C16D363917979A0F003FFE94 /* NibCell.xib */,
+				158E34681797AF4200B31962 /* StartSesionViewController.h */,
+				158E34691797AF4200B31962 /* StartSesionViewController.m */,
+				158E346A1797AF4200B31962 /* StartSesionViewController.xib */,
+				158E346D1797AF7800B31962 /* NewAccountViewController.h */,
+				158E346E1797AF7800B31962 /* NewAccountViewController.m */,
+				158E346F1797AF7800B31962 /* NewAccountViewController.xib */,
+				158E34721797AFDC00B31962 /* PwdRecoveryViewController.h */,
+				158E34731797AFDC00B31962 /* PwdRecoveryViewController.m */,
+				158E34741797AFDC00B31962 /* PwdRecoveryViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -315,6 +339,9 @@
 				1552D21A1796645400D79EDB /* 001_Init_img3.png in Resources */,
 				1552D21B1796645400D79EDB /* 001_Init_img3@2x.png in Resources */,
 				C16D363A17979A0F003FFE94 /* NibCell.xib in Resources */,
+				158E346C1797AF4200B31962 /* StartSesionViewController.xib in Resources */,
+				158E34711797AF7800B31962 /* NewAccountViewController.xib in Resources */,
+				158E34761797AFDC00B31962 /* PwdRecoveryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +362,9 @@
 				C14CDA891796383400DA0FB5 /* MapViewController.m in Sources */,
 				C1B1128D1796515D00485D41 /* ALScrollViewPaging.m in Sources */,
 				C1C1FE60179664D900A5FD32 /* HomeViewControllerCell.m in Sources */,
+				158E346B1797AF4200B31962 /* StartSesionViewController.m in Sources */,
+				158E34701797AF7800B31962 /* NewAccountViewController.m in Sources */,
+				158E34751797AFDC00B31962 /* PwdRecoveryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
