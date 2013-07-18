@@ -36,6 +36,8 @@
 		C14CDA90179647B000DA0FB5 /* shovel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CDA8E179647B000DA0FB5 /* shovel@2x.png */; };
 		C168630A1794FF4600F9EE32 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C16863091794FF4600F9EE32 /* User.m */; };
 		C168630C179500AC00F9EE32 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168630B179500AC00F9EE32 /* CoreData.framework */; };
+		C16D363A17979A0F003FFE94 /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16D363917979A0F003FFE94 /* NibCell.xib */; };
+		C16D363C1797A360003FFE94 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16D363B1797A360003FFE94 /* MapKit.framework */; };
 		C1B1128D1796515D00485D41 /* ALScrollViewPaging.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B1128C1796515D00485D41 /* ALScrollViewPaging.m */; };
 		C1C1FE60179664D900A5FD32 /* HomeViewControllerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C1FE5F179664D900A5FD32 /* HomeViewControllerCell.m */; };
 /* End PBXBuildFile section */
@@ -80,6 +82,8 @@
 		C16863081794FF4600F9EE32 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		C16863091794FF4600F9EE32 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		C168630B179500AC00F9EE32 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C16D363917979A0F003FFE94 /* NibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibCell.xib; sourceTree = "<group>"; };
+		C16D363B1797A360003FFE94 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C1B1128B1796515D00485D41 /* ALScrollViewPaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALScrollViewPaging.h; sourceTree = "<group>"; };
 		C1B1128C1796515D00485D41 /* ALScrollViewPaging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALScrollViewPaging.m; sourceTree = "<group>"; };
 		C1C1FE5E179664D900A5FD32 /* HomeViewControllerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewControllerCell.h; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C16D363C1797A360003FFE94 /* MapKit.framework in Frameworks */,
 				C168630C179500AC00F9EE32 /* CoreData.framework in Frameworks */,
 				1594669217922068002D3671 /* UIKit.framework in Frameworks */,
 				1594669417922068002D3671 /* Foundation.framework in Frameworks */,
@@ -134,6 +139,7 @@
 		1594669017922068002D3671 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C16D363B1797A360003FFE94 /* MapKit.framework */,
 				C168630B179500AC00F9EE32 /* CoreData.framework */,
 				1594669117922068002D3671 /* UIKit.framework */,
 				1594669317922068002D3671 /* Foundation.framework */,
@@ -225,6 +231,7 @@
 				C14CDA881796383400DA0FB5 /* MapViewController.xib */,
 				C1C1FE5E179664D900A5FD32 /* HomeViewControllerCell.h */,
 				C1C1FE5F179664D900A5FD32 /* HomeViewControllerCell.m */,
+				C16D363917979A0F003FFE94 /* NibCell.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -307,6 +314,7 @@
 				1552D2191796645400D79EDB /* 001_Init_img2@2x.png in Resources */,
 				1552D21A1796645400D79EDB /* 001_Init_img3.png in Resources */,
 				1552D21B1796645400D79EDB /* 001_Init_img3@2x.png in Resources */,
+				C16D363A17979A0F003FFE94 /* NibCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

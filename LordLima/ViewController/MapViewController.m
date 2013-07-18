@@ -38,4 +38,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)hideMap:(id)sender{
+    
+}
+
 @end

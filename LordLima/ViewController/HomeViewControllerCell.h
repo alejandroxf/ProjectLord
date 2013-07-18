@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeViewControllerCell : UICollectionViewCell
-
-@property(nonatomic, strong) UILabel *lblTitle;
+ 
 @end

@@ -16,6 +16,7 @@
 
 @property (nonatomic) int currentPage;
 @property (nonatomic) BOOL hasPageControl;
+@property (nonatomic) int bottomPageControl;
 @property (nonatomic, strong) UIColor *pageControlCurrentPageColor;
 @property (nonatomic, strong) UIColor *pageControlOtherPagesColor;
 

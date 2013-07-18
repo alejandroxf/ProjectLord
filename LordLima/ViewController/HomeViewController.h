@@ -10,6 +10,10 @@
 
 @interface HomeViewController : UIViewController
 
+
+@property(nonatomic, weak) IBOutlet UIScrollView *scrollView;
 @property(nonatomic, weak) IBOutlet UICollectionView *collectionRoutes;
+
+
 -(IBAction)showRoute:(id)sender;
 @end

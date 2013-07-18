@@ -8,14 +8,14 @@
 
 #import "HomeViewControllerCell.h"
 
-@implementation HomeViewControllerCell
-@synthesize lblTitle = _lblTitle;
+@implementation HomeViewControllerCell 
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        [self createElements];
     }
     return self;
 }
@@ -30,10 +30,12 @@
 */
 
 -(void) createElements{
-    self.lblTitle = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 180, 20)];
-    [self.lblTitle setText:@"Title"];
     
-    
+    UILabel *NameText=[[UILabel alloc] initWithFrame:CGRectMake(50, 4, 230, 14)];
+    NameText.font=[UIFont fontWithName:@"Helvetica"  size:12];
+  	NameText.backgroundColor =[UIColor clearColor];
+     NameText.tag=1;
+	[self.contentView addSubview:NameText]; 
 }
 
 @end

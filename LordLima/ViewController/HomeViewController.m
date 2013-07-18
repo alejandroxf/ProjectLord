@@ -13,12 +13,15 @@
 
 
 
-@interface HomeViewController () 
+@interface HomeViewController () <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 
 @end
 
 @implementation HomeViewController
+@synthesize scrollView = _scrollView;
+@synthesize collectionRoutes = _collectionRoutes;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,11 +36,19 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+     
+    
     
     [self createMenuBar];
     [self createSlider];
     
     [self loadCollectionView];
+    
+    /*UICollectionViewFlowLayout *flowLayout  = [[UICollectionViewFlowLayout alloc] init];
+    [flowLayout setItemSize:CGSizeMake(200, 200)];
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    
+    [self.collectionRoutes setCollectionViewLayout:flowLayout];*/
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,7 +79,8 @@
     [scrollingView addPages:views];
     
     //add scrollview to the views
-    [self.view addSubview:scrollingView];
+    [self.scrollView addSubview:scrollingView];
+    //[self.view addSubview:scrollingView];
     
     [scrollingView setHasPageControl:NO];
 }
@@ -86,12 +98,71 @@
     [self setTitle:@"Cool!!!"];
 }
 
-#pragma UICollectionViewDelegate
-
-
-
 -(void) loadCollectionView{
-    /*[self.collectionRoutes registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"HomeViewControllerCell"];*/
+    //[self.collectionRoutes registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"HomeViewControllerCell"];
+    UINib *cellNib = [UINib nibWithNibName:@"NibCell" bundle:nil];
+    [self.collectionRoutes registerNib:cellNib forCellWithReuseIdentifier:@"cvCell"];
+    
+}
+
+
+#pragma mark - UICollectionView Datasource
+//1
+-(NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return 2;
+}
+//2
+-(NSInteger) numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 10;
+}
+//3
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static NSString *cellIdentifier = @"cvCell";
+    
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier
+                                                                           forIndexPath:indexPath];
+    
+    UILabel *lblTitle = (UILabel*)[cell viewWithTag:100];
+    
+    [lblTitle setText:@"Esto es !!"];
+    
+    return cell;
+}
+
+//4
+/*
+-(UICollectionReusableView *) collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+    return [[UICollectionReusableView alloc] init];
+}
+*/
+
+#pragma mark - UICollectionViewDelegate
+-(void) collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
+
+-(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    UIViewController *currentVC = [[RouteViewController alloc]  initWithNibName:@"RouteViewController"
+                                                                         bundle:nil];
+    
+    
+    [self.navigationController pushViewController:currentVC
+                                         animated:YES];
+}
+
+
+
+#pragma mark - UICollectionViewDelegateFlowLayout
+//1
+-(CGSize) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return CGSizeMake(145, 145);
+}
+
+//2
+-(UIEdgeInsets) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+    return UIEdgeInsetsMake(5, 5, 5, 5);
 }
 
 

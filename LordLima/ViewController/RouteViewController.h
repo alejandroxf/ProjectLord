@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface RouteViewController : UIViewController
+@interface RouteViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+
+
+@property(nonatomic, weak) IBOutlet UITableView *tableViewPlace;
 
 -(IBAction)showPlace:(id)sender;
+-(IBAction)showMap:(id)sender;
 
 @end

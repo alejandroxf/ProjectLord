@@ -14,6 +14,7 @@
 @end
 
 @implementation RouteViewController
+@synthesize tableViewPlace = _tableViewPlace;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,10 +42,47 @@
                                                                         bundle:nil];
     
     [self.navigationController pushViewController:currentVC animated:YES];
-    
 }
 
 -(void) viewDidAppear:(BOOL)animated{
     [self setTitle:@"Route"];
 }
+
+-(IBAction)showMap:(id)sender{
+    
+}
+
+
+#pragma mark - UITableDataSource
+
+-(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{
+    return 7;
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return @"";
+}
+/*
+-(NSInteger) tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
+    return @"";
+}
+*/
+
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return nil;
+}
+
+
+#pragma mark - UITableViewDelegate
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
+
+
+
+
 @end
