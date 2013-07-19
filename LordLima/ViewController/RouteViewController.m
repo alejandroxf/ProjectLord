@@ -8,6 +8,7 @@
 
 #import "RouteViewController.h"
 #import "PlaceViewController.h"
+#import "MapViewController.h"
 
 @interface RouteViewController ()
 
@@ -29,6 +30,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self registerNibTableCell];
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,6 +52,17 @@
 }
 
 -(IBAction)showMap:(id)sender{
+    UIViewController *currentCV = [[UIViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:currentCV animated:YES];
+    
+    //currentCV = nil;
+}
+
+-(void) registerNibTableCell{
+    UINib *cellNib = [UINib nibWithNibName:NibCell bundle:nil];
+    
+    [self.tableViewPlace registerNib:cellNib forCellReuseIdentifier:NibCellIdentifier];
     
 }
 
@@ -73,7 +87,12 @@
 }
 
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return nil;
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NibCellIdentifier forIndexPath:indexPath];
+    
+    UILabel *lblTitle = (UILabel *)[cell viewWithTag:100];
+    [lblTitle setText:@"Audio 1"]; 
+    return cell;
 }
 
 

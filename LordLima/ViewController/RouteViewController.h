@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
+
+#define NibCell @"NibAudioCell"
+#define NibCellIdentifier @"cvAudioCellIdentifier"
+
 @interface RouteViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 

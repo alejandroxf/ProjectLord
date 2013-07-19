@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "HysteriaPlayer.h"
 @interface PlaceViewController : UIViewController
 
+
+@property(nonatomic, strong) HysteriaPlayer *hysteriaPlayer;
+
+@property(nonatomic, strong) NSArray *mp3Array;
+
+-(IBAction)playStaticArray:(id)sender;
 @end
