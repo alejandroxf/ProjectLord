@@ -62,6 +62,8 @@
 		C1BF52021798DC85005CCBEB /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BF51F71798DC85005CCBEB /* AFURLConnectionOperation.m */; };
 		C1BF52031798DC85005CCBEB /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BF51F91798DC85005CCBEB /* AFXMLRequestOperation.m */; };
 		C1BF52041798DC85005CCBEB /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BF51FB1798DC85005CCBEB /* UIImageView+AFNetworking.m */; };
+		C1BF52071798E55D005CCBEB /* Libido.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C1BF52061798E55D005CCBEB /* Libido.mp3 */; };
+		C1BF520917990122005CCBEB /* noseralomismo.aif in Resources */ = {isa = PBXBuildFile; fileRef = C1BF520817990122005CCBEB /* noseralomismo.aif */; };
 		C1C1FE60179664D900A5FD32 /* HomeViewControllerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C1FE5F179664D900A5FD32 /* HomeViewControllerCell.m */; };
 /* End PBXBuildFile section */
 
@@ -146,6 +148,8 @@
 		C1BF51F91798DC85005CCBEB /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		C1BF51FA1798DC85005CCBEB /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		C1BF51FB1798DC85005CCBEB /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		C1BF52061798E55D005CCBEB /* Libido.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Libido.mp3; sourceTree = "<group>"; };
+		C1BF520817990122005CCBEB /* noseralomismo.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = noseralomismo.aif; sourceTree = "<group>"; };
 		C1C1FE5E179664D900A5FD32 /* HomeViewControllerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewControllerCell.h; sourceTree = "<group>"; };
 		C1C1FE5F179664D900A5FD32 /* HomeViewControllerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewControllerCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -252,6 +256,7 @@
 		C14CDA8B179646CF00DA0FB5 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				C1BF52051798E55D005CCBEB /* Audio */,
 				C14CDA8C179646CF00DA0FB5 /* Images */,
 			);
 			path = Resource;
@@ -363,6 +368,15 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		C1BF52051798E55D005CCBEB /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				C1BF520817990122005CCBEB /* noseralomismo.aif */,
+				C1BF52061798E55D005CCBEB /* Libido.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -438,6 +452,8 @@
 				158E34761797AFDC00B31962 /* PwdRecoveryViewController.xib in Resources */,
 				C187D9EF1798CD5900F0A4E4 /* NibAudioCell.xib in Resources */,
 				C1BF51DD1798D272005CCBEB /* point1sec.mp3 in Resources */,
+				C1BF52071798E55D005CCBEB /* Libido.mp3 in Resources */,
+				C1BF520917990122005CCBEB /* noseralomismo.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

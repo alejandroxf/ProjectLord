@@ -28,7 +28,7 @@
 	<true/>
 	<key>UIBackgroundModes</key>
 	<array>
-		<string>Audio plays audio</string>
+		<string>audio</string>
 	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
