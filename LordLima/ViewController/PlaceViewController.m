@@ -108,9 +108,9 @@
 
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    /*[self.player clear];
+    [self.player clear];
     [[UIApplication sharedApplication] endReceivingRemoteControlEvents];
-    [self resignFirstResponder];*/
+    [self resignFirstResponder];
 }
 -(void) registerAudio{
     self.hysteriaPlayer = [[HysteriaPlayer sharedInstance]
@@ -279,17 +279,11 @@
     self.player.audioQueue = [[AVQueuePlayer alloc] initWithItems:self.mp3Array];
     [self.player PlayAtindex:self.indexPlaying items:self.mp3Array];
     
-    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
-    [self becomeFirstResponder];
-    
 }
-
-
 
 -(IBAction)slideChange:(id)sender{
     [self.player volume:self.sliderVolumen.value];
 }
-
 
 #pragma mark - audio session management
 
