@@ -17,8 +17,7 @@
 
 
 @property(nonatomic, weak) IBOutlet UITableView *tableViewPlace;
-
--(IBAction)showPlace:(id)sender;
+ 
 -(IBAction)showMap:(id)sender;
 
 @end

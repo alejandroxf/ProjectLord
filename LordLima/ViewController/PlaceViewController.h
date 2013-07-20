@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "HysteriaPlayer.h"
 
+#import "XFAudioSession.h"
 
 
 @interface PlaceViewController : UIViewController<AVAudioPlayerDelegate>
@@ -25,13 +26,16 @@
 
 
 
-@property(nonatomic, strong) AVQueuePlayer *player;
+@property(nonatomic, strong) XFAudioSession *player;
 @property(nonatomic, strong) id limeObserver;
 
 @property(nonatomic, strong) IBOutlet UIToolbar *toolBar;
 @property(nonatomic, strong) IBOutlet UIBarButtonItem *btnBarNext;
 @property(nonatomic, strong) IBOutlet UIBarButtonItem *btnBarPrevious;
 @property(nonatomic, strong) IBOutlet UIBarButtonItem *btnBarPlay;
+
+@property(nonatomic) int indexPlaying;
+@property(nonatomic, strong) IBOutlet UISlider *sliderVolumen;
 
 -(IBAction)playStaticArray:(id)sender; 
 -(IBAction)previous:(id)sender;

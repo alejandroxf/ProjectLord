@@ -40,13 +40,6 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)showPlace:(id)sender;{
-    UIViewController *currentVC = [[PlaceViewController alloc] initWithNibName:@"PlaceViewController"
-                                                                        bundle:nil];
-    
-    [self.navigationController pushViewController:currentVC animated:YES];
-}
-
 -(void) viewDidAppear:(BOOL)animated{
     [self setTitle:@"Route"];
 }
@@ -69,8 +62,12 @@
 
 #pragma mark - UITableDataSource
 
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 60;
+}
+
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{
-    return 7;
+    return 3;
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -91,17 +88,31 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NibCellIdentifier forIndexPath:indexPath];
     
     UILabel *lblTitle = (UILabel *)[cell viewWithTag:100];
-    [lblTitle setText:@"Audio 1"]; 
+    
+    NSString *textLabel = [NSString stringWithFormat:@"index %i", indexPath.section];
+    [lblTitle setText:textLabel];
+    
     return cell;
 }
 
 
 #pragma mark - UITableViewDelegate
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    PlaceViewController *currentVC = [[PlaceViewController alloc] initWithNibName:@"PlaceViewController"
+                                                                        bundle:nil];
     
+    currentVC.indexPlaying = indexPath.section;
+    
+    
+    [self.navigationController pushViewController:currentVC animated:YES];
 }
 
 
-
+-(void)viewWillAppear:(BOOL)animated{
+    NSIndexPath *selected = [self.tableViewPlace indexPathForSelectedRow];
+    if(selected)
+        [self.tableViewPlace deselectRowAtIndexPath:selected animated:YES]; 
+    
+}
 
 @end

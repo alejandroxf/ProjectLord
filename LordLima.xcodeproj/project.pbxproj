@@ -40,6 +40,7 @@
 		C14CDA8A1796383400DA0FB5 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C14CDA881796383400DA0FB5 /* MapViewController.xib */; };
 		C14CDA8F179647B000DA0FB5 /* shovel.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CDA8D179647B000DA0FB5 /* shovel.png */; };
 		C14CDA90179647B000DA0FB5 /* shovel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CDA8E179647B000DA0FB5 /* shovel@2x.png */; };
+		C15B35D6179A4B7B00ECB9A8 /* XFAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = C15B35D5179A4B7B00ECB9A8 /* XFAudioSession.m */; };
 		C168630A1794FF4600F9EE32 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C16863091794FF4600F9EE32 /* User.m */; };
 		C168630C179500AC00F9EE32 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C168630B179500AC00F9EE32 /* CoreData.framework */; };
 		C16D363A17979A0F003FFE94 /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16D363917979A0F003FFE94 /* NibCell.xib */; };
@@ -113,6 +114,8 @@
 		C14CDA881796383400DA0FB5 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		C14CDA8D179647B000DA0FB5 /* shovel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shovel.png; sourceTree = "<group>"; };
 		C14CDA8E179647B000DA0FB5 /* shovel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shovel@2x.png"; sourceTree = "<group>"; };
+		C15B35D4179A4B7B00ECB9A8 /* XFAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFAudioSession.h; sourceTree = "<group>"; };
+		C15B35D5179A4B7B00ECB9A8 /* XFAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFAudioSession.m; sourceTree = "<group>"; };
 		C16863081794FF4600F9EE32 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		C16863091794FF4600F9EE32 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		C168630B179500AC00F9EE32 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -272,6 +275,15 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		C15B35D3179A4B4D00ECB9A8 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				C15B35D4179A4B7B00ECB9A8 /* XFAudioSession.h */,
+				C15B35D5179A4B7B00ECB9A8 /* XFAudioSession.m */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		C16863051794FEE400F9EE32 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +296,7 @@
 		C16863061794FEE400F9EE32 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				C15B35D3179A4B4D00ECB9A8 /* Audio */,
 				C1BF51E81798DC85005CCBEB /* AFNetworking */,
 				C1BF51D81798D272005CCBEB /* HysteriaPlayer */,
 				C1B1128A1796515D00485D41 /* ALScrollViewPaging */,
@@ -487,6 +500,7 @@
 				C1BF52021798DC85005CCBEB /* AFURLConnectionOperation.m in Sources */,
 				C1BF52031798DC85005CCBEB /* AFXMLRequestOperation.m in Sources */,
 				C1BF52041798DC85005CCBEB /* UIImageView+AFNetworking.m in Sources */,
+				C15B35D6179A4B7B00ECB9A8 /* XFAudioSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
