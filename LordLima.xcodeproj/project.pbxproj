@@ -30,6 +30,13 @@
 		159466A817922068002D3671 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 159466A717922068002D3671 /* Default-568h@2x.png */; };
 		159466AB17922068002D3671 /* xurfaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159466AA17922068002D3671 /* xurfaceViewController.m */; };
 		159466AE17922068002D3671 /* xurfaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 159466AC17922068002D3671 /* xurfaceViewController.xib */; };
+		C14946D0179CEA7200B2165E /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14946CE179CEA7200B2165E /* FacebookSDK.framework */; };
+		C14946D1179CEA7200B2165E /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C14946CF179CEA7200B2165E /* FacebookSDKResources.bundle */; };
+		C14946D3179CEBA800B2165E /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C14946D2179CEBA800B2165E /* libsqlite3.0.dylib */; };
+		C14946D5179CEBD700B2165E /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14946D4179CEBD700B2165E /* Accounts.framework */; };
+		C14946D7179CEBEA00B2165E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14946D6179CEBEA00B2165E /* Social.framework */; };
+		C14946D9179CEC1200B2165E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14946D8179CEC1200B2165E /* AdSupport.framework */; };
+		C14946DB179CEC3600B2165E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14946DA179CEC3600B2165E /* Security.framework */; };
 		C14CDA7A17962EC300DA0FB5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CDA7817962EC300DA0FB5 /* HomeViewController.m */; };
 		C14CDA7B17962EC300DA0FB5 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C14CDA7917962EC300DA0FB5 /* HomeViewController.xib */; };
 		C14CDA7F1796378D00DA0FB5 /* RouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CDA7D1796378D00DA0FB5 /* RouteViewController.m */; };
@@ -100,6 +107,13 @@
 		159466A917922068002D3671 /* xurfaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xurfaceViewController.h; sourceTree = "<group>"; };
 		159466AA17922068002D3671 /* xurfaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xurfaceViewController.m; sourceTree = "<group>"; };
 		159466AD17922068002D3671 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/xurfaceViewController.xib; sourceTree = "<group>"; };
+		C14946CE179CEA7200B2165E /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = LordLima/Lib/FacebookSDK.framework; sourceTree = "<group>"; };
+		C14946CF179CEA7200B2165E /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = LordLima/Lib/FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		C14946D2179CEBA800B2165E /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		C14946D4179CEBD700B2165E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		C14946D6179CEBEA00B2165E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		C14946D8179CEC1200B2165E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		C14946DA179CEC3600B2165E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C14CDA7717962EC300DA0FB5 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		C14CDA7817962EC300DA0FB5 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		C14CDA7917962EC300DA0FB5 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -162,6 +176,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C14946DB179CEC3600B2165E /* Security.framework in Frameworks */,
+				C14946D9179CEC1200B2165E /* AdSupport.framework in Frameworks */,
+				C14946D7179CEBEA00B2165E /* Social.framework in Frameworks */,
+				C14946D5179CEBD700B2165E /* Accounts.framework in Frameworks */,
+				C14946D3179CEBA800B2165E /* libsqlite3.0.dylib in Frameworks */,
 				C1BF51E31798D379005CCBEB /* AudioToolbox.framework in Frameworks */,
 				C1BF51E41798D379005CCBEB /* AVFoundation.framework in Frameworks */,
 				C1BF51E51798D379005CCBEB /* CoreMedia.framework in Frameworks */,
@@ -172,6 +191,7 @@
 				1594669217922068002D3671 /* UIKit.framework in Frameworks */,
 				1594669417922068002D3671 /* Foundation.framework in Frameworks */,
 				1594669617922068002D3671 /* CoreGraphics.framework in Frameworks */,
+				C14946D0179CEA7200B2165E /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +231,13 @@
 		1594669017922068002D3671 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C14946DA179CEC3600B2165E /* Security.framework */,
+				C14946D8179CEC1200B2165E /* AdSupport.framework */,
+				C14946D6179CEBEA00B2165E /* Social.framework */,
+				C14946D4179CEBD700B2165E /* Accounts.framework */,
+				C14946D2179CEBA800B2165E /* libsqlite3.0.dylib */,
+				C14946CE179CEA7200B2165E /* FacebookSDK.framework */,
+				C14946CF179CEA7200B2165E /* FacebookSDKResources.bundle */,
 				C1BF51DE1798D379005CCBEB /* AudioToolbox.framework */,
 				C1BF51DF1798D379005CCBEB /* AVFoundation.framework */,
 				C1BF51E01798D379005CCBEB /* CoreMedia.framework */,
@@ -467,6 +494,7 @@
 				C1BF51DD1798D272005CCBEB /* point1sec.mp3 in Resources */,
 				C1BF52071798E55D005CCBEB /* Libido.mp3 in Resources */,
 				C1BF520917990122005CCBEB /* noseralomismo.aif in Resources */,
+				C14946D1179CEA7200B2165E /* FacebookSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +613,10 @@
 		159466B217922068002D3671 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LordLima/Lib\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LordLima/LordLima-Prefix.pch";
 				INFOPLIST_FILE = "LordLima/LordLima-Info.plist";
@@ -596,6 +628,10 @@
 		159466B317922068002D3671 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LordLima/Lib\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LordLima/LordLima-Prefix.pch";
 				INFOPLIST_FILE = "LordLima/LordLima-Info.plist";

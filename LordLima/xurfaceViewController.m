@@ -9,6 +9,7 @@
 #import "xurfaceViewController.h"
 #import "xurfaceAppDelegate.h"
 #import "ALScrollViewPaging.h"
+#import "NewAccountViewController.h"
 
 @interface xurfaceViewController ()
 
@@ -32,9 +33,17 @@
     // Dispose of any resources that can be recreated.
 }
 -(IBAction)loadHomeViewController:(id)sender{
+    
+    /*
+    UIViewController *currentView  = [[NewAccountViewController alloc] initWithNibName:@"NewAccountViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:currentView animated:YES];
+    */
     xurfaceAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     
     [delegate rootViewControllerByNavigationController];
+    
+    
 }
 
 -(void)createSlider{

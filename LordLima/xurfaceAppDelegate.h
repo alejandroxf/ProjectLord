@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <FacebookSDK/FacebookSDK.h>
 @class xurfaceViewController;
 
 @interface xurfaceAppDelegate : UIResponder <UIApplicationDelegate>

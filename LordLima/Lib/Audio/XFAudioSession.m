@@ -30,7 +30,6 @@
                              sizeof (doSetProperty),
                              &doSetProperty
                              );
-    
     NSError *activationError = nil;
     [[AVAudioSession sharedInstance] setActive: YES error: &activationError];
     if (activationError) {
