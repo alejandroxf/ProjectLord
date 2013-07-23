@@ -39,10 +39,15 @@
     
     [self.navigationController pushViewController:currentView animated:YES];
     */
-    xurfaceAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     
-    [delegate rootViewControllerByNavigationController];
+    UIViewController *currentVC = [[NewAccountViewController alloc] initWithNibName:@"NewAccountViewController" bundle:nil];
     
+    self.definesPresentationContext = YES;
+    self.providesPresentationContextTransitionStyle = YES;
+    self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    currentVC.modalPresentationStyle = UIModalTransitionStyleCrossDissolve;
+    
+    [self presentViewController:currentVC animated:YES completion:nil];
     
 }
 

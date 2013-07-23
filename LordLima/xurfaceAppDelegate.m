@@ -29,11 +29,10 @@
 }
 
 -(void) rootViewControllerByNavigationController{
-    NewAccountViewController *currentVC = [[NewAccountViewController alloc] initWithNibName:@"NewAccountViewController" bundle:nil];
+    UIViewController *currentVC = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
     self.mainNavigationController  = [[UINavigationController alloc] initWithRootViewController:currentVC];
     self.window.rootViewController = self.mainNavigationController;
     [self.window makeKeyAndVisible];
-    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

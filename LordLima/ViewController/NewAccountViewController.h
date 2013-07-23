@@ -11,4 +11,6 @@
 
 @interface NewAccountViewController : UIViewController
 
+-(IBAction)dismissRegister:(id)sender;
+
 @end
