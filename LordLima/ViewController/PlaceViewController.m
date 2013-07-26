@@ -86,7 +86,7 @@
     
     [XFAudioSession initSession];
     
-    self.player = [[XFAudioSession alloc] init];
+    self.player = [XFAudioSession sharedInstance];
     
     
     [self createSlider];
@@ -108,7 +108,7 @@
 
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    [self.player clear];
+    //[self.player clear];
     [[UIApplication sharedApplication] endReceivingRemoteControlEvents];
     [self resignFirstResponder];
 }

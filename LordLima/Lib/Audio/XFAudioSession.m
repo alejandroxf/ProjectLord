@@ -13,11 +13,22 @@
 @implementation XFAudioSession
 @synthesize audioQueue = _audioQueue;
 
+static XFAudioSession *sharedInstance = nil;
+
++(XFAudioSession *)sharedInstance{
+     
+    static dispatch_once_t predicate;
+    dispatch_once(&predicate, ^{
+        sharedInstance = [self alloc];
+    });
+    
+    return sharedInstance;
+}
 
 +(void)initSession{
     // Registers this class as the delegate of the audio session.
     [[AVAudioSession sharedInstance] setDelegate: self];
-    
+
     NSError *setCategoryError = nil;
     [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error: &setCategoryError];
     if (setCategoryError) {

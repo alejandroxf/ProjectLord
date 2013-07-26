@@ -13,6 +13,7 @@
 
 @property(nonatomic, strong) AVQueuePlayer* audioQueue;
 
++(XFAudioSession *)sharedInstance;
 +(void)initSession; 
 -(float)play_pause;
 -(void) PlayAtindex:(int)index items:(NSArray*)mp3Array;
