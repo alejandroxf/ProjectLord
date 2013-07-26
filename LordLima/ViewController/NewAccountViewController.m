@@ -9,24 +9,15 @@
 #import "NewAccountViewController.h"
 #import "xurfaceAppDelegate.h"
 
-@interface NewAccountViewController ()<FBLoginViewDelegate, UITextFieldDelegate>
-
-@property(nonatomic, strong) id<FBGraphUser> loggedInUser;
-@property(nonatomic, strong) IBOutlet UILabel *lblFirstName;
-@property(nonatomic, strong) IBOutlet FBProfilePictureView *fbProfilePic;
-@property(nonatomic, strong) IBOutlet UILabel *lblStatus;
-@property(nonatomic, strong) IBOutlet UILabel *lblLocation;
-@property(nonatomic, strong) IBOutlet UIButton *btnHome;
-
+@interface NewAccountViewController ()
 @end
 
 @implementation NewAccountViewController
 @synthesize lblFirstName = _lblFirstName;
-@synthesize fbProfilePic = _fbProfilePic;
-@synthesize loggedInUser = _loggedInUser;
 @synthesize lblStatus = _lblStatus;
 @synthesize lblLocation = _lblLocation;
 @synthesize btnHome = _btnHome;
+@synthesize delegate = _delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,18 +32,24 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    FBLoginView *loginview = [[FBLoginView alloc] init];
     
-    loginview.readPermissions = @[@"email", @"user_likes"];
-    loginview.publishPermissions = @[@"publish_actions"];
-    loginview.defaultAudience = FBSessionDefaultAudienceFriends;
-    			
-    loginview.frame = CGRectOffset(loginview.frame, 5, 5);
-    loginview.delegate = self;
     
-    [self.view addSubview:loginview];
     
-    [loginview sizeToFit];
+    //Abrir sesion si este ya esta creada.
+    _delegate = [[UIApplication sharedApplication] delegate];
+    [self.delegate openSessionWithAllowLoginUI:NO];
+    
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(sessionStateChanged:)
+     name:FBSessionStateChangedNotification
+     object:nil];
+    
+    if([FBSession.activeSession isOpen]){
+        [self loadViewControllerHome];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,48 +66,45 @@
 }
 
 #pragma mark - FBLoginViewDelegate
-
--(void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user{
-    /*self.lblFirstName.text = [NSString stringWithFormat:@"Hello %@", user.first_name];
-    self.fbProfilePic.profileID = user.id;
-    self.loggedInUser = user;
-    self.lblLocation.text = user.location.name;*/
+-(IBAction)sendLoginFacebook:(id)sender{
     
+    [_delegate openSessionWithAllowLoginUI:YES];
     
-    
-    xurfaceAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    
-    [delegate rootViewControllerByNavigationController];
-}
--(void)loginViewShowingLoggedInUser:(FBLoginView *)loginView{
-    self.lblStatus.text = @"login";
 }
 
--(void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView{
-    self.fbProfilePic.profileID = nil;
-    self.lblFirstName.text = @"";
-    self.lblStatus.text = @"logout";
-    self.lblLocation.text = @"";
+
+- (void)sessionStateChanged:(NSNotification*)notification {
+    if (FBSession.activeSession.isOpen) {
+        
+        /*
+         //Recueperar las propiedades del usuario que esta en sesion
+         
+        [[FBRequest requestForMe] startWithCompletionHandler:
+         ^(FBRequestConnection *connection,
+           NSDictionary<FBGraphUser> *user,
+           NSError *error) {
+             if (!error) {
+                 self.lblFirstName.text = user.first_name;  
+                 //self.lblMail.text = [user objectForKey:@"email"];
+                 self.lblLocation.text = user.location.name;
+             }
+         }];
+        */
+        
+        [self loadViewControllerHome];
+
+    }
 }
 
--(void) loginView:(FBLoginView *)loginView handleError:(NSError *)error{
-    NSLog(@"Error %@", error);
+-(void) loadViewControllerHome{
+    [_delegate rootViewControllerByNavigationController];
 }
-
 #pragma mark - end FBLoginViewDelegate
 
 #pragma mark - UITextFieldDelegate
 
-
-
-
-
 -(IBAction)dismissRegister:(id)sender{
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
-    
-    
-    
 }
-
 
 @end

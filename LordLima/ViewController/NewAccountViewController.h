@@ -7,10 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <FacebookSDK/FacebookSDK.h>
 
-@interface NewAccountViewController : UIViewController
+@class xurfaceAppDelegate;
+
+@interface NewAccountViewController : UIViewController<UITextFieldDelegate>
+
+
+@property(nonatomic, strong) xurfaceAppDelegate *delegate;
+@property(nonatomic, strong) IBOutlet UILabel *lblFirstName;
+@property(nonatomic, strong) IBOutlet UILabel *lblStatus;
+@property(nonatomic, strong) IBOutlet UILabel *lblLocation;
+@property(nonatomic, strong) IBOutlet UIButton *btnHome;
+
 
 -(IBAction)dismissRegister:(id)sender;
+-(IBAction)sendLoginFacebook:(id)sender;
 
 @end

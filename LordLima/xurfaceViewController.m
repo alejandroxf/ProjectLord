@@ -18,13 +18,25 @@
 @implementation xurfaceViewController
 @synthesize btnIniciarSesion = _btnIniciarSesion;
 @synthesize btnRegistrar = _btnRegistrar;
+@synthesize delegate = _delegate;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self createSlider]; 
-    [self loadButtons];
+    
+    
+    _delegate = [[UIApplication sharedApplication] delegate];
+    [self.delegate openSessionWithAllowLoginUI:NO];
+    
+     
+    
+    if([FBSession.activeSession isOpen]){
+        [self loadViewControllerHome];
+    }else{
+        [self createSlider];
+        [self loadButtons];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,6 +87,8 @@
     [scrollingView setHasPageControl:YES];
     
     
+    [scrollingView setPageControlCurrentPageColor:[UIColor blackColor]];
+    [scrollingView setPageControlOtherPagesColor:[UIColor whiteColor]];
     
 }
 
@@ -85,9 +99,11 @@
     
     [self.view addSubview:self.btnIniciarSesion];
     [self.btnIniciarSesion setFrame:CGRectMake(184, 410, 122, 43)];
-    
-    
-    
+}
+
+
+-(void)loadViewControllerHome{
+    [_delegate rootViewControllerByNavigationController];
 }
 
 @end

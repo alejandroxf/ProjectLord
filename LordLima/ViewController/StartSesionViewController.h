@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "xurfaceAppDelegate.h"
 @interface StartSesionViewController : UIViewController
+
+@property(nonatomic, strong) xurfaceAppDelegate *delegate;
+
+-(IBAction)sendLoginFacebook:(id)sender;
+-(IBAction)dismissRegister:(id)sender;
+-(void)loadViewControllerHome;
+
+
 
 @end
